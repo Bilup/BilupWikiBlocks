@@ -1,4 +1,4 @@
-A simple MediaWiki extension for rendering Scratch Blocks used on Scratch 3.0. Supports MediaWiki 1.35+.
+A simple MediaWiki extension for rendering Bilup Blocks used on Bilup 2.0. Supports MediaWiki 1.35+.
 
 Transforms `<scratchblocks>` tags inside wiki articles into `<pre class="blocks">` in the HTML, which are then rendered to scratch blocks using CSS and JS included in the page. Inline blocks are rendered with `<sb>` tags, and become `<code class="blocks">` tags.
 
@@ -19,9 +19,9 @@ After cloning, add the line
 ```php
 wfLoadExtension( "mw-BilupBlocks" );
 ```
-to your LocalSettings.php file. If you need to use languages besides English, add the following line (Japanese and Traditional Chinese used as an example):
+to your LocalSettings.php file. If you need to use languages besides English, add the following line (Simplified Chinese and Traditional Chinese used as an example):
 ```php
-$wgBilupBlocksLangs = ['ja', 'zh_TW'];
+$wgBilupBlocksLangs = ['zh_CN', 'zh_TW'];
 ```
 Note that the TW is preceded by an underscore rather than a hyphen.
 
