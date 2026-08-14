@@ -1,5 +1,5 @@
 mw.hook('wikipage.content').add(function run_scratchblocks() {
-	var version = mw.config.get('wgScratchBlocks4BlockVersion');
+	var version = mw.config.get('wgBilupBlocksBlockVersion');
 	var scale = 1;
 	// Note: the weak equality is intentional to allow '2' and 2 both specify sb2
 	if (version == 2 || version[0] == '2') { // to handle '2.0'
@@ -8,7 +8,7 @@ mw.hook('wikipage.content').add(function run_scratchblocks() {
 		version = (version === 'hc-3' || version === 'hc-3.0') ? 'scratch3-high-contrast' : 'scratch3';
 		scale = 0.675;
 	}
-	var langs = ['en'].concat(mw.config.get('wgScratchBlocks4Langs'));
+	var langs = ['en'].concat(mw.config.get('wgBilupBlocksLangs'));
 	scratchblocks.renderMatching('pre.blocks', { languages: langs, style: version, scale: scale });
 	scratchblocks.renderMatching('code.blocks', { languages: langs, style: version, inline: true, scale: scale });
 	scratchblocks.renderMatching('pre[class^=blocks-hc-3]', { languages: langs, style: 'scratch3-high-contrast', scale: 0.675 });

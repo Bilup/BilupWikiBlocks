@@ -1,46 +1,47 @@
 {
-	"name": "ScratchBlocks4",
+	"name": "BilupBlocks",
 	"author": [
 		"ErnieParke",
 		"blob8108",
 		"apple502j",
-		"kenny2github"
+		"kenny2github",
+		"Bilup"
 	],
-	"url": "https://github.com/InternationalScratchWiki/mw-ScratchBlocks4",
+	"url": "https://github.com/Bilup/BilupWikiBlocks",
 	"descriptionmsg": "sb3-desc",
 	"license-name": "MIT",
 	"type": "parserhook",
 	"AutoloadClasses": {
-		"Scratchblock4Hook": "ScratchblockHooks.php"
+		"BilupBlockHook": "BilupblockHooks.php"
 	},
 	"ResourceModules": {
-		"ext.scratchBlocks4": {
+		"ext.BilupBlocks": {
 			"scripts": [
-				"run_scratchblocks4.js"
+				"run_BilupBlocks.js"
 			],
 			"styles": "/inline.css",
 			"dependencies": [
-				"ext.scratchBlocks4.sb",
-				"ext.scratchBlocks4.translations"
+				"ext.BilupBlocks.sb",
+				"ext.BilupBlocks.translations"
 			]
 		},
-		"ext.scratchBlocks4.sb": {
+		"ext.BilupBlocks.sb": {
 			"scripts": [
-				"lib/scratchblocks.min.js"
+				"lib/bilupblocks.min.js"
 			]
 		},
-		"ext.scratchBlocks4.translations": {
+		"ext.BilupBlocks.translations": {
 			"scripts": [
 				"lib/translations-all.js"
 			],
 			"dependencies": [
-				"ext.scratchBlocks4.sb"
+				"ext.BilupBlocks.sb"
 			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "mw-ScratchBlocks4"
+		"remoteExtPath": "mw-BilupBlocks"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "main",
@@ -48,19 +49,19 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "Scratchblock4Hook"
+			"class": "BilupBlockHook"
 		}
 	},
 	"MessagesDirs": {
-		"ScratchBlocks4": [
+		"BilupBlocks": [
 			"i18n"
 		]
 	},
 	"config": {
-		"ScratchBlocks4Langs": {
+		"BilupBlocksLangs": {
 			"value": []
 		},
-		"ScratchBlocks4BlockVersion": {
+		"BilupBlocksBlockVersion": {
 			"value": "3.0"
 		}
 	},

@@ -1,5 +1,5 @@
 code[class^=blocks] {
-	display: inline-block;
+	display: inline;
 }
 
 #content [class^=blocks] {
