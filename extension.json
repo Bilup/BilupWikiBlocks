@@ -17,7 +17,7 @@
 	"ResourceModules": {
 		"ext.BilupBlocks": {
 			"scripts": [
-				"run_BilupBlocks.js"
+				"run_bilupblocks.js"
 			],
 			"styles": "/inline.css",
 			"dependencies": [
