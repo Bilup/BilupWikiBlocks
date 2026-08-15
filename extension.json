@@ -41,7 +41,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "mw-BilupBlocks"
+		"remoteExtPath": "BilupWikiBlocks"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "main",

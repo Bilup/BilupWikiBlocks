@@ -17,7 +17,7 @@ $ git clone http://github.com/Bilup/BilupWikiBlocks
 ```
 After cloning, add the line
 ```php
-wfLoadExtension( "mw-BilupBlocks" );
+wfLoadExtension( "BilupWikiBlocks" );
 ```
 to your LocalSettings.php file. If you need to use languages besides English, add the following line (Simplified Chinese and Traditional Chinese used as an example):
 ```php
